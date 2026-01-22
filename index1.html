@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Scan My Website QR</title>
+  <style>
+    /* Full-page gradient background */
+    body {
+      margin: 0;
+      height: 100vh;
+      background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #ffffff;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 2.5em;
+      margin-bottom: 30px;
+      text-shadow: 2px 2px 8px rgba(0,0,0,0.6);
+    }
+
+    #qr-container {
+      background: rgba(255,255,255,0.1);
+      padding: 30px;
+      border-radius: 25px;
+      box-shadow: 0 0 40px rgba(0,0,0,0.5);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    img {
+      width: 250px;
+      height: 250px;
+      border-radius: 15px;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 1.2em;
+      color: #f0f0f0;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Scan this QR to Visit My Website</h1>
+
+  <div id="qr-container">
+    <!-- Replace "qr_img.png" with the filename of your Node.js QR -->
+    <img src="qr_img.png" alt="Scan QR to visit my site">
+    <p>Open your camera and scan to visit!</p>
+  </div>
+
+</body>
+</html>
